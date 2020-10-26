@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{%block head %}
+
+{% endblock %}
+
+{%block body %}
+<h1>Welcome to the Allstar Predictor. We will predict your player's all star future based on their sophomore year stats </h1>
+<br></br>
+<br></br>
+<form action="/player" method = "post" >
+    <label for="name">Player Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <input type="submit" value="Submit">
+  </form>
+
+{% endblock %}
